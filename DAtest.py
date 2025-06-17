@@ -1,3 +1,6 @@
+#撈取pchome api資料，keyword為iphone，結果會透過爬蟲取出關鍵字前15名的資料。
+#相關檔案為iphone_2025_06.csv
+
 import requests
 import pandas as pd
 from datetime import datetime
