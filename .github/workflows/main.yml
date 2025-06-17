@@ -1,0 +1,38 @@
+# .github/workflows/monthly_job.yml
+name: Monthly Data Job
+
+on:
+  schedule:
+    - cron: '0 1 1 * *'  # 每月1日 台灣時間 09:00（GitHub 使用 UTC）
+  workflow_dispatch:  # 允許手動執行
+
+jobs:
+  run-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 下載 Repo
+      uses: actions/checkout@v3
+
+    - name: 設定 Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 安裝套件
+      run: |
+        pip install -r requirements.txt
+
+    - name: 產生假資料
+      run: |
+        python scripts/generate_fake_data.py
+
+    - name: 執行分析
+      run: |
+        python scripts/analyze.py
+
+    - name: 上傳產出
+      uses: actions/upload-artifact@v3
+      with:
+        name: summary-output
+        path: output/summary.csv
