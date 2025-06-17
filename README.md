@@ -1,6 +1,6 @@
 Junior DA engineer side project 
 
-專案名稱： 每月自動化數據分析報告系統
+專案名稱： 每月自動化數據分析報告系統for Pchome取模擬資料iphone六個月間商品熱門排序後總結
 
 工具： Python、GitHub Actions、pandas、Git
 
