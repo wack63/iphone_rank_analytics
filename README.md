@@ -11,3 +11,6 @@ Junior DA engineer side project
 使用 pandas 進行數據清洗與統計分析，搭配圖表產出報告。
 模組化 Python 程式結構，利於日後維護與擴充。
 
+補充:
+之所以先用六個月假資料是因為目前手頭上只有六月份iphone_rank top15的檔案，這樣子沒辦法做數字交叉比對，因此不得已出此下策。
+
