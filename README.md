@@ -13,4 +13,5 @@ Junior DA engineer side project
 
 補充:
 由於目前僅有 6 月的 iPhone 排行資料，缺乏完整的歷史數據可交叉比對，因此暫以假資料模擬前幾個月的內容，以便測試整體分析流程。
+Main program : DAtest.py利用requests爬取pchome api資料可取得完整數據
 
